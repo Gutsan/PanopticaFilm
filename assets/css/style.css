@@ -1,0 +1,181 @@
+*{
+    padding: 0;
+    margin:0;
+}
+:root{
+    --color1:#292c3a;
+    --color2:#ecc92e;
+    --color3:#fff;
+    --color4:#1f222c;
+}
+@font-face {
+    font-family: "Aventi";
+    src: url(../fonts/Aventi-Regular.ttf);
+}
+body{
+    background-color: var(--color1);
+    font-family:  sans-serif;
+    width: 100vw;
+}
+header{
+    position: fixed;
+    top:0;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+nav{
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav p{
+    color:var(--color2);
+    font-family: Aventi,sans-serif;
+}
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul li{
+    list-style: none;
+    
+}
+nav ul li a:hover{
+    color: var(--color2);
+}
+
+a{
+    text-decoration: none;
+    color: var(--color3)
+}
+.secTitulo{
+    height: 10vh;
+    width: 100vw;
+    text-align: center;
+    font-size: 2rem;
+    color:var(--color2)
+}
+
+.secPrincipal{
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    padding-top: 10vh;
+}
+#heroSection{
+    background-image: url(../img/heroSection.jpg);
+    background-size: cover;
+}
+.heroBaner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height:90vh;
+}
+#heroSection h1{
+    color: var(--color2);
+    font-size: 5rem;
+    font-family: Aventi,sans-serif;
+}
+#heroSection p{
+    color: var(--color3);
+    font-size: 1.5rem;
+}
+#sinopsis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#sinopsis p{
+    color: var(--color3);
+    font-size: 1rem;
+    width: 80vw;
+    font-size: 1.5rem;
+}
+#S-gallery{
+    background-color: var(--color4);
+}
+.gallery{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.imaGallery{
+    width: 20rem;
+    height: 30rem;
+}
+#review{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#review .containerReview{
+    height: 80rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+#review .containerReview .cardCritica{
+    height: 15rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+#review .containerReview .cardCritica h3{
+    color: var(--color2);
+}
+#review .containerReview .cardCritica i{
+    color: var(--color2);
+}
+
+#review .containerReview .cardCritica p{
+    color: var(--color3);
+    text-align: justify;
+}
+footer{
+    height: 10rem;
+    width: 100rem;
+    background-color: var(--color4);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer h2{
+    color: var(--color2);
+    font-size: 2rem;
+    font-family: Aventi,sans-serif;
+}
+.redes{
+    height: 10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+.redes a{
+    font-size: 2rem;
+}
+.redes a:hover{
+    color: var(--color2);
+    scale: 1.1;
+}
